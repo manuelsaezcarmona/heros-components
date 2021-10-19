@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Heroes</title>
+  </head>
+  <body>
+    <app-root>
+      <header>
+        <h1>Tour Of Heroes</h1>
+        <nav class="main-menu">
+          <ul class="main-menu__list">
+            <li><a href="./index.html">Dashboard</a></li>
+            <li><a href="./heroes.html">Heroes</a></li>
+          </ul>
+        </nav>
+      </header>
+      <app-heroes
+        ><h2 class="app-heroes__title">My Heroes</h2>
+        <div class="new-hero-container">
+          <label for="new-hero-container__label">Hero name: </label
+          ><input id="new-hero-container__input" /><button class="add-button">
+            Add hero
+          </button>
+        </div>
+        <ul class="heroes">
+          <li>
+            <a href="/detail/11"><span class="badge">11</span> Dr Nice </a
+            ><button title="delete hero" class="delete">x</button>
+          </li>
+          <li>
+            <a href="/detail/12"><span class="badge">12</span> Narco </a
+            ><button title="delete hero" class="delete">x</button>
+          </li>
+          <li>
+            <a href="/detail/13"><span class="badge">13</span> Bombasto </a
+            ><button title="delete hero" class="delete">x</button>
+          </li>
+          <li>
+            <a href="/detail/14"><span class="badge">14</span> Celeritas </a
+            ><button title="delete hero" class="delete">x</button>
+          </li>
+          <li>
+            <a href="/detail/15"><span class="badge">15</span> Magneta </a
+            ><button title="delete hero" class="delete">x</button>
+          </li>
+          <li>
+            <a href="/detail/16"><span class="badge">16</span> RubberMan </a
+            ><button title="delete hero" class="delete">x</button>
+          </li>
+          <li>
+            <a href="/detail/17"><span class="badge">17</span> Dynama </a
+            ><button title="delete hero" class="delete">x</button>
+          </li>
+          <li>
+            <a href="/detail/18"><span class="badge">18</span> Dr IQ </a
+            ><button title="delete hero" class="delete">x</button>
+          </li>
+          <li>
+            <a href="/detail/19"><span class="badge">19</span> Magma </a
+            ><button title="delete hero" class="delete">x</button>
+          </li>
+          <li>
+            <a ng-reflect-router-link="/detail/20" href="/detail/20"
+              ><span class="badge">20</span> Tornado </a
+            ><button title="delete hero" class="delete">x</button>
+          </li>
+          <!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}-->
+        </ul></app-heroes
+      >
+    </app-root>
+  </body>
+</html>
